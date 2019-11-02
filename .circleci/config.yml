@@ -1,6 +1,34 @@
 version: 2
 jobs:
-  build:
+  任务1:
+    docker:
+      - image: circleci/node:4.8.2
+
+    steps:
+      - checkout
+
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+
+      - run:
+          name: Print the Current Time
+          command: date
+  任务2:
+    docker:
+      - image: circleci/node:4.8.2
+
+    steps:
+      - checkout
+
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+
+      - run:
+          name: Print the Current Time
+          command: date
+  任务3:
     docker:
       - image: circleci/node:4.8.2
 

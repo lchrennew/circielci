@@ -54,4 +54,4 @@ workflows:
 
       - "任务3":
           requires:
-            - "任务3"
+            - "任务1"

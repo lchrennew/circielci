@@ -47,4 +47,8 @@ workflows:
   "自定义工作流": # name of your workflow
     jobs:
       - "任务1"
-      - "任务2"
+      - "任务2":
+        requires:
+           - "任务1" # wait for build1 job to complete successfully before starting
+           # see circleci.com/docs/2.0/workflows/ for more examples.
+

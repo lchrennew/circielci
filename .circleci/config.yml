@@ -42,6 +42,22 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+          
+  "任务4":
+    docker:
+      - image: circleci/node:4.8.2
+
+    steps:
+      - checkout
+
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+
+      - run:
+          name: Print the Current Time
+          command: date
+
 workflows:
   version: 2
   "自定义工作流": # name of your workflow
@@ -55,3 +71,9 @@ workflows:
       - "任务3":
           requires:
             - "任务1"
+            
+      - "任务4":
+          requires:
+            - "任务2"
+            - "任务3"
+          type: approval

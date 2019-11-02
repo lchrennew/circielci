@@ -42,3 +42,9 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+workflows:
+  version: 2
+  "自定义工作流": # name of your workflow
+    jobs:
+      - "任务1"
+

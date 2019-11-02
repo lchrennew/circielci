@@ -47,7 +47,8 @@ workflows:
   "自定义工作流": # name of your workflow
     jobs:
       - "任务1"
+      
       - "任务2":
-        requires:
-          - "任务1"
+          requires:
+            - "任务1"
 

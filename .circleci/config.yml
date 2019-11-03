@@ -81,5 +81,5 @@ workflows:
       - "任务4":
           requires:
             - "任务2"
-            - "任务1"
+            - "任务3"
           type: approval

@@ -77,8 +77,6 @@ workflows:
             - "任务1"
 
       - "任务3":
-          requires:
-            - "任务1"
             
       - "任务4":
           requires:
